@@ -35,9 +35,9 @@ While a goal is set, the model gets a few tools:
   destructive). Pi stops and waits; your next message is the answer, and then it carries on.
 - `goal_pause` pauses the goal when it needs you to do something outside Pi, such as signing in
   or granting access.
-- `goal_wait` waits for background work instead of idling or polling: agents from
-  [pi-subagents](https://github.com/kacperkwapisz/pi-subagents) started in the background, or
-  jobs from a background jobs extension that speaks the same protocol (see below).
+- `goal_wait` waits for background work instead of idling or polling: jobs from
+  [pi-bg-jobs](https://github.com/kacperkwapisz/pi-bg-jobs) or agents from
+  [pi-subagents](https://github.com/kacperkwapisz/pi-subagents) started in the background.
   Pi continues when one of them finishes, when you send a message, or after a timeout
   (30 minutes by default).
 
