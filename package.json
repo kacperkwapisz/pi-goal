@@ -1,0 +1,47 @@
+{
+  "name": "pi-goal",
+  "version": "0.1.0",
+  "description": "Persistent goals for Pi: it keeps working until the goal is done, asks when it needs you, and waits for background jobs and agents.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Kacper Kwapisz",
+  "homepage": "https://github.com/kacperkwapisz/pi-goal#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kacperkwapisz/pi-goal.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "goal",
+    "autonomous"
+  ],
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "1.1.0",
+    "@earendil-works/pi-coding-agent": "1.1.0",
+    "@earendil-works/pi-tui": "1.1.0",
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.0"
+  }
+}
